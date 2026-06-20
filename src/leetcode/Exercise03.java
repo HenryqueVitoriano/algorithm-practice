@@ -8,32 +8,36 @@ public class Exercise03 {
     public static void main(String[] args) {
         // Given a string s, find the length of the longest substring without duplicate characters.
 
-        Scanner scanner = new Scanner(System.in);
 
-        String Frase = scanner.next();
+        String Frase = "au";
         System.out.println(Solution(Frase));
 
     }
-    public static int Solution(String s){
+
+    public static int Solution(String s) {
         Map<Character, Integer> MapList = new HashMap<>();
         char[] charArray = s.toCharArray();
         int value = 0;
+        int answer = 1;
 
-        for (int i = 0; i < charArray.length; i++){
-            if (MapList.containsKey(charArray[i])){
-                value = 0;
-            }else {
-                MapList.put(charArray[i], i);
-                value++;
-            }
+        if (s.isEmpty()){
+            return 0;
         }
 
+        for (int i = 0; i < charArray.length; i++) {
+            if (MapList.containsKey(charArray[i])) {
+                if (answer < value) {
+                    answer = value;
+                    value = 0;
+                }
+                MapList.clear();
+            }
 
+            MapList.put(charArray[i], i);
+            value++;
 
-
-
-
-        return 0;
+        }
+        return value;
     }
 
 }
