@@ -9,35 +9,30 @@ public class Exercise03 {
         // Given a string s, find the length of the longest substring without duplicate characters.
 
 
-        String Frase = "au";
+        String Frase = "abcabcbb";
         System.out.println(Solution(Frase));
 
     }
 
     public static int Solution(String s) {
-        Map<Character, Integer> MapList = new HashMap<>();
-        char[] charArray = s.toCharArray();
-        int value = 0;
-        int answer = 1;
+        Map<Character, Integer> map = new HashMap<>();
 
-        if (s.isEmpty()){
-            return 0;
-        }
+        int left = 0;
+        int answer = 0;
 
-        for (int i = 0; i < charArray.length; i++) {
-            if (MapList.containsKey(charArray[i])) {
-                if (answer < value) {
-                    answer = value;
-                    value = 0;
-                }
-                MapList.clear();
+        for (int right = 0; right < s.length(); right++) {
+            char current = s.charAt(right);
+
+            if (map.containsKey(current)) {
+                left = Math.max(left, map.get(current) + 1);
             }
 
-            MapList.put(charArray[i], i);
-            value++;
+            map.put(current, right);
 
+            answer = Math.max(answer, right - left + 1);
         }
-        return value;
-    }
 
+        return answer;
+    }
 }
+
