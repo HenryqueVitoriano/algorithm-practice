@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class Exercise03 {
     public static void main(String[] args) {
         // Given a string s, find the length of the longest substring without duplicate characters.
+        Scanner scanner = new Scanner(System.in);
 
-
-        String Frase = "abcabcbb";
+        String Frase = scanner.next();
         System.out.println(Solution(Frase));
 
     }
