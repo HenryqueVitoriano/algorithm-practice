@@ -1,0 +1,60 @@
+Desafio 01 — Última parada (Postos de gasolina)
+
+Dado o combustível disponível,
+o consumo (km por litro) e uma lista de distâncias de postos de gasolina,
+retorne o posto mais distante que ainda está dentro do alcance do carro.
+Se nenhum posto estiver dentro do alcance, retorne -1.
+
+Desafio 02 — Menor e maior valor de vendas
+
+Dada uma lista de listas (vendas de vários vendedores),
+considerando apenas vendas entre 20 e 500,
+retorne o menor e o maior valor de venda encontrados.
+
+Desafio 03 — Decifrador de senha binária
+
+Dada uma matriz de strings binárias (senha fragmentada, uma linha por "pista"),
+para cada coluna, se a soma dos bits for maior ou igual à metade do total de linhas,
+o bit final é 1, senão é 0. Monte a senha final binária e converta para decimal.
+
+Desafio 04 — Top ocorrências de queries
+
+Dado um texto e uma lista de termos de busca (queries),
+conte quantas vezes cada termo aparece no texto e
+retorne os k termos com mais ocorrências.
+
+Desafio 05 — Porcentagem de sorteio
+
+Dada uma lista de participantes (se são assinantes ou não) e os minutos assistidos por cada um,
+ calcule a chance percentual de cada participante ganhar um sorteio — assinantes têm o dobro de
+  chances (peso) proporcional ao total de horas assistidas por todos.
+
+Desafio 06 — Número escondido
+
+Dado um número e um "número oculto",
+verifique se os dígitos do número oculto aparecem, na mesma ordem
+(não necessariamente consecutivos), dentro do número principal.
+
+Desafio 07 — Total de LEDs em um painel
+
+Um painel retangular é formado por quadrados de 1x1 cm,
+com um LED em cada vértice/interseção. Dada a altura e largura do painel (em quadrados),
+calcule o número total de LEDs.
+
+Desafio 08 — Escolher empresa de táxi
+
+Dadas duas empresas de táxi, cada uma com uma taxa fixa e um valor por km rodado,
+determine qual empresa é mais barata — considerando que a resposta pode depender da
+distância percorrida (retornando a partir de qual km cada empresa se torna mais vantajosa).
+
+Desafio 09 — Próximo string maior (permutação lexicográfica)
+
+Dado um nome (string), reordene suas letras para formar a próxima combinação alfabética
+imediatamente maior que a original (o "próximo maior" mais próximo possível).
+Se não houver combinação maior, retorne "sem resposta".
+
+
+Desafio 10 — Shuffle de músicas (playlist alternada)
+
+Dada uma lista com o número de vezes que cada música foi tocada,
+monte uma nova playlist alternando as músicas mais tocadas com as menos tocadas.
