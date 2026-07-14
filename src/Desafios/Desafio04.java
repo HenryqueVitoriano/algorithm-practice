@@ -4,6 +4,7 @@ import javax.print.DocFlavor;
 import java.awt.*;
 import java.util.*;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Desafio04 {
     /*
@@ -20,7 +21,7 @@ public class Desafio04 {
 
     }
 
-        public static List<Map.Entry<String, Integer>> Solution(String texto, List<String> termos, int k) {
+    public static List<Map.Entry<String, Integer>> Solution(String texto, List<String> termos, int k) {
 
         Map<String, Integer> contadorStrings = new HashMap<>();
 
@@ -33,13 +34,11 @@ public class Desafio04 {
             }
         }
 
-        List<Map.Entry<String, Integer>> resultado = new ArrayList<>(contadorStrings.entrySet());
-        Comparator<Map.Entry<String, Integer>> porValor = Map.Entry.comparingByValue();
-
-        resultado.sort(porValor.reversed());
-
-        return resultado.subList(0,k);
-
+        return contadorStrings.entrySet()
+                .stream()
+                .sorted(Map.Entry.<String, Integer>comparingByValue().reversed())
+                .limit(k)
+                .collect(Collectors.toList());
 
     }
 }
