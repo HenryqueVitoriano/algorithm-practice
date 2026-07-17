@@ -27,7 +27,7 @@ Desafio 05 — Porcentagem de sorteio
 
 Dada uma lista de participantes (se são assinantes ou não) e os minutos assistidos por cada um,
 calcule a chance percentual de cada participante ganhar um sorteio — assinantes têm o dobro de
- chances (peso) proporcional ao total de horas assistidas por todos.
+chances (peso) proporcional ao total de horas assistidas por todos.
 
 Desafio 06 — Número escondido
 
