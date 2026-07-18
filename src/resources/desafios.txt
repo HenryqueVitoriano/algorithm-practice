@@ -1,4 +1,4 @@
-Desafio 01 — Última parada (Postos de gasolina)
+'"'''''Desafio 01 — Última parada (Postos de gasolina)
 
 Dado o combustível disponível,
 o consumo (km por litro) e uma lista de distâncias de postos de gasolina,
@@ -27,7 +27,7 @@ Desafio 05 — Porcentagem de sorteio
 
 Dada uma lista de participantes (se são assinantes ou não) e os minutos assistidos por cada um,
 calcule a chance percentual de cada participante ganhar um sorteio — assinantes têm o dobro de
- chances (peso) proporcional ao total de horas assistidas por todos.
+chances (peso) proporcional ao total de horas assistidas por todos.
 
 Desafio 06 — Número escondido
 
@@ -57,4 +57,4 @@ Se não houver combinação maior, retorne "sem resposta".
 Desafio 10 — Shuffle de músicas (playlist alternada)
 
 Dada uma lista com o número de vezes que cada música foi tocada,
-monte uma nova playlist alternando as músicas mais tocadas com as menos tocadas.
+monte uma nova playlist alternando as músicas mais tocadas com as menos tocadas.'''''"'
