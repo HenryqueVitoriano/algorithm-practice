@@ -1,6 +1,4 @@
 package Desafios;
-
-import javax.print.DocFlavor;
 import java.awt.*;
 import java.util.*;
 import java.util.List;
